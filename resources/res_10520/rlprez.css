@@ -1,0 +1,173 @@
+/*!
+ * ActivePresenter HTML5 Output File
+ * Copyright (c) Atomi Systems, Inc. All rights reserved.
+ * https://atomisystems.com/activepresenter/
+ * Version: 8.5.8
+ * Date: 2022.07.28
+ */
+#pruebadeCD .ap-focused {
+	outline: 1px dashed black;
+	outline-offset: 1px;
+}
+#pruebadeCD p {
+	margin: 0;
+}
+#pruebadeCD ol,ul {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+#pruebadeCD {
+	-webkit-tap-highlight-color: transparent;
+}
+@font-face{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Arial'),
+         url('resources/font_0.woff');
+}
+@font-face{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Arial Bold'),
+         url('resources/font_1.woff');
+}
+@font-face{
+    font-family: 'Tahoma';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Tahoma'),
+         url('resources/font_2.woff');
+}
+
+.ap-input-fib-placeholder-slide-330-control-1 {
+  box-shadow: 0 0 0 2px rgba(205,63,128,0.8);
+  box-sizing: border-box;
+  border-radius: 4px;
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: default;
+  margin: 2px 0px 2px 0px;
+  background: none;
+  padding: 0 3px 0 3px;
+  line-height: normal;
+  max-width: 1000px;
+}
+.ap-input-fib-placeholder-slide-330-control-1:focus-within{
+  box-shadow: 0 0 0 2px rgba(205,63,128);
+  box-sizing: border-box;
+}
+.ap-input-fib-slide-330-control-1 {
+  padding: 1px 1px 1px 1px;
+  background: none;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 50px;
+  max-width: 100%;
+}
+
+.ap-correct-values-dropbtn:hover {
+  background-color: #ddd;
+}
+.ap-correct-values-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.ap-correct-values-dropdown-content {
+  display: none;
+  position: absolute;
+  color: black;
+  background-color: #f1f1f1;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.ap-correct-values-dropdown-content li
+{
+  color: black;
+  padding: 4px 4px;
+  cursor: auto;
+}
+.ap-correct-values-dropdown-content li:hover {
+  background-color: #ddd;
+}
+.ap-correct-values-dropdown:hover .ap-correct-values-dropdown-content {
+  min-width: 100px;
+}
+.ap-correct-values-dropdown:hover{
+  background-color: #ddd;
+}
+
+
+/* Animation */
+@-webkit-keyframes 
+pulsate {
+	0% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		opacity: 0.8;
+	}
+	45% {
+		-webkit-transform: scale(1.75);
+		transform: scale(1.75);
+		opacity: 0;
+	}
+}
+@keyframes 
+pulsate {
+	0% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		opacity: 0.8;
+	}
+	45% {
+		-webkit-transform: scale(1.75);
+		transform: scale(1.75);
+		opacity: 0;
+	}
+}
+
+.ap-hotspot {
+	position: absolute;
+	transition: all .3s ease;
+	cursor: pointer;
+}
+
+.ap-hotspot .hs-circle {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	border-radius: 50%;
+	transform-origin: 50% 50%;
+}
+
+.ap-hotspot .hs-ring {
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+	border-radius: 50%;
+	margin: -1px auto auto -1px;
+	border: 1px solid;
+	-webkit-animation: pulsate 3s ease-out infinite;
+	animation: pulsate 3s ease-out infinite;
+	opacity: 0;
+}
+
+.ap-hotspot .hs-ring:hover {
+	animation: none;
+}
